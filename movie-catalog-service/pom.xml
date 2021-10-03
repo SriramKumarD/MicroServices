@@ -15,13 +15,13 @@
 	<description>Demo project for Spring Boot (Movie Catalog service)</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<start-class>com.srird.moviecatalogservice.MovieCatalogServiceApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -43,5 +43,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
