@@ -5,6 +5,11 @@ public class Rating {
 	private String movieId;
 	private int rating;
 	
+	
+	public Rating() {
+		super();
+	}
+	
 	public Rating(String movieId, int rating) {
 		super();
 		this.movieId = movieId;
@@ -16,6 +21,7 @@ public class Rating {
 	public void setMovieId(String movieId) {
 		this.movieId = movieId;
 	}
+
 	public int getRating() {
 		return rating;
 	}
