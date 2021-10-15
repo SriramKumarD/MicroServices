@@ -34,7 +34,7 @@ public class MovieCatalogResource {
 		
 		return userRating.getUserRatings().stream().map(rating -> {
 			Movie movie = restTemplate.getForObject("http://movie-info-service/movies/" +rating.getMovieId(), Movie.class);
-			return new CatalogItem(movie.getMovieName(), "SuriyaMovie", rating.getRating());
+			return new CatalogItem(movie.getName(), movie.getDescription(), rating.getRating());
 		}).collect(Collectors.toList());
 		
 		//For each movid Id,Call movie info service and get the details
